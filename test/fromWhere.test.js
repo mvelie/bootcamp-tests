@@ -6,7 +6,7 @@ describe('fromWhere', function(){
     it('return paarl if startWith CJ', function(){
         assert.equal(fromWhere('CJ'),'Paarl');
     });
-    it('return CApe Town if startWith CA', function(){
+    it('return Cape Town if startWith CA', function(){
         assert.equal(fromWhere('CA'),'Cape Town');
       });
       it('return some other place if startWith other regNum', function(){
