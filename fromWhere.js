@@ -1,9 +1,9 @@
 function fromWhere(regNum){
-if(regNum =='CY'){
+if(regNum =='CY987'){
      return 'Bellville';
-}else if(regNum =='CJ'){
+}else if(regNum =='CJ864'){
   return 'Paarl';
-}else if(regNum =='CA'){
+}else if(regNum =='CA9252'){
 return "Cape Town";
 
 }else{

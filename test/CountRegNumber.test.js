@@ -4,7 +4,7 @@ describe('countRegNumber', function(){
         assert.equal(countRegNumber('3'),true );
     });
     it('check the number of regNum', function(){
-      assert.equal(countRegNumber('CA9865,CJ44576'),2);
+      assert.equal(countRegNumber('CA9865,CJ44576,CL76839,EC7775'),4);
     });
     it('return invalid regNum', function(){
       assert.equal(countRegNumber('A9865,C44576'),2);

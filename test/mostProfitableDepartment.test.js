@@ -21,4 +21,7 @@ describe('mostProfitableDepartment', function(){
     it('should  return department made the most profite', function(){
         assert.equal(mostProfitableDepartment(salesData),'outdoor');
     });
+    it('should  return day that made the most profite', function(){
+        assert.notDeepEqual(mostProfitableDepartment('Thursday'),'outdoor');
+    });
   });
