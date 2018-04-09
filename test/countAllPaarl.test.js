@@ -1,9 +1,9 @@
 describe('countAllPaarl', function(){
 
-    it('should check what regNum from Paarl startsWith CJ 64723', function(){
-        assert.equal(countAllPaarl('CJ'),true);
+    it('should check how many from Paarl CJ 64723, CA 746, CL 36575', function(){
+        assert.equal(countAllPaarl('CJ 64723'),1);
     });
-    it('should return the endWith of regNum from Paarl CJ 98123', function(){
-      assert.equal(countAllPaarl('23'),false);
+    it('should return how many from other places CJ 98123, GP 735, MP 39766, CL 5457 ', function(){
+      assert.notEqual(countAllPaarl(' GP 735, MP 39766, CL 5457'),3);
     });
     });

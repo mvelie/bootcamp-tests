@@ -6,6 +6,9 @@ describe('totalPhoneBill', function(){
     it('should return cost of a sms', function(){
       assert.equal(totalPhoneBill('sms'),"R0.65");
     });
+    it('should return totalcost of 3 calls', function(){
+      assert.notEqual(totalPhoneBill('call,call,call'),"");
+    });
     it('should return cost if no call or sms made', function(){
       assert.equal(totalPhoneBill('total'),"R0.00");
     });

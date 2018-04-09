@@ -6,7 +6,7 @@ describe('countRegNumber', function(){
     it('check the number of regNum', function(){
       assert.equal(countRegNumber('CA9865,CJ44576,CL76839,EC7775'),4);
     });
-    it('return invalid regNum', function(){
-      assert.equal(countRegNumber('A9865,C44576'),2);
+    it('return undefined ', function(){
+      assert.notEqual(countRegNumber('GP 98765,EC 98762,CJ 29567'),'');
     });
     });
